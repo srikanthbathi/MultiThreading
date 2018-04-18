@@ -17,16 +17,24 @@ public class Client extends Thread{
 	
 	@Override
 	public void run(){
+		System.out.println(this.getState());
 		System.out.println("Thread running");
 	}
 
 	public static void main(String[] args) throws InterruptedException {
 		
 		Client c = new Client();
-		
-        c.start();
+		Thread t = Thread.currentThread();
+		 System.out.println("Current thread: " + t.getName());
+		System.out.println(c.getState());
+        c.start();System.out.println(c.getState());
         Thread.sleep(2000);
+        System.out.println(c.getState());
         System.out.println("main method runs");
+        System.out.println(c.getState());
+        
+        TRunnable run = new TRunnable();
+        
 	}
 
 }
