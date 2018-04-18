@@ -19,6 +19,9 @@ Use of **locks from java.util.concurrent.locks package**.
 Using **thread safe collection classes**,
 Using **volatile keyword with variables** to make every thread read the data from memory, not read from thread cache.
 
+**ThreadLocal**
+Java ThreadLocal is used to create thread-local variables. We know that all threads of an Object share it’s variables, so if the variable is not thread safe, we can use synchronization but if we want to avoid synchronization, we can use ThreadLocal variables.
+Every thread has it’s own ThreadLocal variable and they can use it’s get() and set() methods to get the default value or change it’s value local to Thread. ThreadLocal instances are typically private static fields in classes that wish to associate state with a thread. 
 
 
 
