@@ -1,5 +1,7 @@
 https://dzone.com/articles/threads-top-80-interview
 
+https://dzone.com/articles/how-to-test-if-your-multi-threaded-java-rest-servi
+
 The current thread which invokes wait(), notify(), notifyAll() methods on any object should have the object monitor else it throws 
 **java.lang.IllegalMonitorStateException exception**.
 
