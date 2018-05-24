@@ -18,3 +18,11 @@ syncLatch.countDown();
 
 
 ....
+
+syncLatch.await();
+
+**Facts about CountDownLatch:**
+
+Creating an object of CountDownLatch by passing an int to its constructor (the count), is actually number of invited parties (threads) for an event.
+The thread, which is dependent on other threads to start processing, waits on until every other thread has called count down. All threads, which are waiting on await() proceed together once count down reaches to zero.
+countDown() method decrements the count and await() method blocks until count == 0
