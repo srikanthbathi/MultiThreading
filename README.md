@@ -6,6 +6,8 @@ https://tarunsapra.wordpress.com/2011/08/21/spring-singleton-request-session-bea
 
 https://dzone.com/articles/spring-transaction-management-over-multiple-thread-1
 
+https://dzone.com/articles/java-thread-local-%E2%80%93-how-use
+
 The current thread which invokes wait(), notify(), notifyAll() methods on any object should have the object monitor else it throws 
 **java.lang.IllegalMonitorStateException exception**.
 
